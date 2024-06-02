@@ -13,7 +13,6 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -22,6 +21,8 @@ import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.woofapp.data.Dog
+import com.example.woofapp.data.dogs
 import com.example.woofapp.ui.theme.WoofAppTheme
 
 class MainActivity : ComponentActivity() {
@@ -64,6 +65,7 @@ fun DogItem(
     }
 }
 
+
 @Composable
 fun DogIcon(
     @DrawableRes dogIcon: Int,
@@ -98,6 +100,7 @@ fun DogInformation(
         )
     }
 }
+
 
 @Preview
 @Composable

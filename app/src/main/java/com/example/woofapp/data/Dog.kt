@@ -1,4 +1,4 @@
-package com.example.woofapp
+package com.example.woofapp.data
 
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
@@ -13,6 +13,7 @@ data class Dog(
     val age: Int,
     @StringRes val hobbies: Int
 )
+
 
 val dogs = listOf(
     Dog(R.drawable.koda, R.string.dog_name_1, 2, R.string.dog_description_1),
